@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/sign.css" />
+  </head>
+  <body>
+    <form action="">
+      <h1 class="text-center">Sign up</h1>
+      <div class="username">
+        <label for="name">Username</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="password">
+        <label for="pass">Password</label>
+        <input
+          id="pass"
+          name="pass"
+          type="password"
+          placeholder="Enter your password"
+          required
+        />
+      </div>
+      <div class="email">
+        <label for="mail">Email</label>
+        <input
+          id="mail"
+          name="mail"
+          type="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div class="age">
+        <label for="age">Age</label>
+        <select name="age" id="age">
+          <option value="child">Chiled</option>
+          <option value="Teneeger" selected>Teneeger</option>
+          <option value="Adult">Adult</option>
+        </select>
+      </div>
+      <button class="btn">Sign up</button>
+    </form>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
