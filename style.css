@@ -1,0 +1,87 @@
+nav .logo{
+    width: 60px;
+    transition: all 2s;
+}
+nav .logo:hover{
+     filter: drop-shadow(0 0 10px #001f4d) drop-shadow(0 0 20px #003366);
+}
+ul{
+    list-style-type: none;
+}
+nav{
+    background-color: #EEEEEE;
+}
+li a{
+    color: #11224E;
+}
+.twobtn button , .btn{
+    color: #001f4d;
+    background-color: rgba(240, 221, 14, 0.957);
+    padding: 5px;
+    margin: 10px;
+    transition: all 2s;
+}
+.twobtn button:hover , .btn:hover{
+    filter: drop-shadow(0 0 10px #001f4d) drop-shadow(0 0 20px #003366);
+}
+
+.hero-section {
+  width: 100vw;             
+  height: 100vh;       
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../images/back1.jpg");
+  background-size: cover;   
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  color: white;       
+  text-align: center;
+  background-repeat: no-repeat;
+}
+.image-container {
+  position: relative;          /* لازم عشان overlay يكون فوق الصورة */
+  width: 300px;                /* عرض الصورة */
+  height: 200px;               /* ارتفاع الصورة */
+  overflow: hidden;            /* يخلي النص مش يخرج عن الصورة */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;           /* الصورة تغطي مساحة الكرت */
+  display: block;
+}
+
+.image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6); 
+  color: white;
+  display: flex;
+  justify-content: center;      
+  align-items: center;
+  opacity: 0;                   
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 10px;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;                
+}
+@media (max-width: 500px) {
+  #age .col-12 {
+    display: flex;              
+    justify-content: center;
+    margin-bottom: 15px;         
+  }
+
+  #age .col-12 img {
+    width: 90%;                  
+    height: auto;
+  }
+}
