@@ -5,34 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/sign.css" />
+    <link rel="stylesheet" href="css/log.css" />
   </head>
   <body>
-    <form class="text-light">
-      <h1 class="text-center">Log in</h1>
-      <div class="email">
-        <label for="mail">Email</label>
-        <input
-          id="mail"
-          name="mail"
-          type="email"
-          placeholder="Enter your email"
-          required
-        />
-      </div>
-      <div class="password">
-        <label for="pass">Password</label>
-        <input
-          id="pass"
-          name="pass"
-          type="password"
-          placeholder="Enter your password"
-          required
-        />
-      </div>
-      <button class="btn">Log in</button>
-      <p class="text-light">Don't have an account? <a href="sign.html" class="text-warning">Sign up</a></p>
-    </form>
+    <main>
+      <div class="x"></div>
+      <form class="text-light">
+        <img src="src/Eye_of_Horus_bw.svg.png" alt="" />
+        <h1 class="fs-3 fw-bolder">Log in</h1>
+          <label for="mail">Email</label>
+          <input
+            id="mail"
+            name="mail"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+          <label for="pass">Password</label>
+          <input
+            id="pass"
+            name="pass"
+            type="password"
+            placeholder="Enter your password"
+            required
+          />
+        <button type="submit" class="fs-5 w-50 btn butn">Log in</button>
+        <p class="mb-0 w-75 text-center">
+          Don't have an account?
+          <a href="sign.html" style="color: #FE7743;">Sign up</a>
+        </p>
+      </form>
+    </main>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>

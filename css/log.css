@@ -1,0 +1,89 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.3)),
+    url(../src/img1.jpg) center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+main {
+  width: 50%;
+  position: relative;
+}
+.x {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: rgba(239, 238, 234, 0.65);
+}
+form {
+  width: 80%;
+  margin: auto;
+  padding: 30px 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  z-index: 2;
+}
+form img {
+  width: 60px;
+  transition: all 0.3s ease-in-out;
+}
+form img:hover {
+  transform: scale(1.5);
+}
+h1,
+p,
+label {
+  color: #273f4f;
+}
+input {
+  color: #273f4f;
+  width: 40%;
+  border: 0;
+  border-radius: 10px;
+  opacity: 0.5;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+input:focus {
+  outline: 0;
+  box-shadow: 0 0 10px rgba(255, 255, 255);
+  background: rgba(255, 255, 255, 0.8);
+}
+label {
+  font-size: 20px;
+}
+.butn {
+  font-size: 25px;
+  background-color: #fe7743;
+  transition: all 0.3s ease-in-out;
+  width: 25%;
+}
+.butn:hover {
+  background-color: black;
+  color: white;
+}
+#pass {
+  width: 50%;
+}
+@media (max-width: 800px) {
+  .x {
+    display: none;
+  }
+  main {
+    width: 100%;
+  }
+  form {
+    background-color: rgba(239, 238, 234, 0.65);
+    border-radius: 20px;
+  }
+  input,
+  #pass {
+    width: 90%;
+  }
+}

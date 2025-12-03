@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="css/sign.css" />
   </head>
   <body>
-    <form class="text-light">
-      <h1 class="text-center">Sign up</h1>
-      <div class="username">
+    <main>
+      <div class="x"></div>
+      <form class="text-light">
+        <img src="src/Eye_of_Horus_bw.svg.png" alt="">
+        <h1 class="fs-3 fw-bolder">Sign up</h1>
         <label for="name">Username</label>
         <input
           id="name"
@@ -19,8 +21,6 @@
           placeholder="Enter your name"
           required
         />
-      </div>
-      <div class="password">
         <label for="pass">Password</label>
         <input
           id="pass"
@@ -29,8 +29,6 @@
           placeholder="Enter your password"
           required
         />
-      </div>
-      <div class="email">
         <label for="mail">Email</label>
         <input
           id="mail"
@@ -39,18 +37,19 @@
           placeholder="Enter your email"
           required
         />
-      </div>
-      <div class="age">
         <label for="age">Age</label>
         <select name="age" id="age">
           <option value="child">Chiled</option>
           <option value="Teneeger" selected>Teneeger</option>
           <option value="Adult">Adult</option>
         </select>
-      </div>
-      <button class="btn">Sign up</button> 
-      <p>You alreadey have an account? <a href="log.html" class="text-warning">Log in</a></p>
-    </form>
+        <button type="submit" class="fs-5 w-50 btn butn">Sign up</button>
+        <p class="mb-0 w-75 text-center">
+          You alreadey have an account?
+          <a href="log.html" style="color: #FE7743;">Log in</a>
+        </p>
+      </form>
+    </main>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
